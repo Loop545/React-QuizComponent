@@ -4,7 +4,7 @@ import QuizQuestionButton from './QuizQuestionButton';
 
 class QuizQuestion extends Component {
     hanldeClick() {
-        { button_text ? this.props.quiz_question.answer : this.props.showNextQuestionHandler() }
+        { this.props.button_text ? this.props.quiz_question.answer : this.props.showNextQuestionHandler() }
     }
     render() {
         return (
