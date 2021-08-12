@@ -3,8 +3,10 @@ import Quiz from './Quiz';
 import QuizQuestionButton from './QuizQuestionButton';
 
 class QuizQuestion extends Component {
-    hanldeClick() {
-        { this.props.button_text ? this.props.quiz_question.answer : this.props.showNextQuestionHandler() }
+    hanldeClick(button_text) {
+        if (button_text === this.props.quiz_question.answer) {
+            this.props.showNextQuestionHandler()
+        }
     }
     render() {
         return (
