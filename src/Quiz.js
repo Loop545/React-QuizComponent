@@ -10,8 +10,10 @@ class Quiz extends Component {
 
     render() {
         return (
-            <div className='quizQuestion'>
-                {quizData(this.props.state)}
+            <div>
+                <div className='QuizQuestion'>
+                    {quizData[this.props.state]}
+                </div>
             </div>
         )
     }
